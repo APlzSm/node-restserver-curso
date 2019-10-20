@@ -10,9 +10,9 @@ const {
 
 const app = express();
 
-app.get("/", function(req, res) {
-    res.json("Hello World");
-});
+//app.get("/", function(req, res) {
+//    res.json("Hello World");
+//});
 
 app.get("/usuario", verificaToken, (req, res) => {
     let desde = req.query.desde || 0;
